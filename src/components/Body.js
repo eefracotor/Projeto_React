@@ -1,44 +1,41 @@
-import React, {useState, useEffect} from "react";
-import ReactDOM  from "react-dom";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { NomeContato } from "./atom/buttoms/datos,js";
+
+export default function Body() {
+  const [todos, setTodos] = useState([])
+  const URL = 'http://localhost:3000/contatos/'
+
+  useEffect(() => {
+    const getData = async () => {
+      const response = await axios.get(URL)
+      setTodos(response.data)
+    }
+    getData()
+  }, []);
+
+  if (!todos) {
+    return <>'Carrregando....'</>
+  } else {
+    let listaContact = []
+    return (
+      listaContact = todos.map((todo) => {
+        if (!todo) {
+          return null
+        }
+        return (
+          <div className="lista">
+            <Link to={`/contato/${todo.id}`}>
+              <div className="card-list" key={todo.id}>
+                <NomeContato nome={todo.nome} />
+              </div>
+            </Link>
+          </div>
+        )
+      })
+    )
+  }
 
 
-import Contact from "./Contact";
-import contactData from "../contactData";
-
- export default function Body(){
-     const URL = 'http://localhost:3000/contatos/'
-     const [todos, setTodos] = useState([])
-     const fetchApi = async () => {
-        const response = await fetch(URL)
-        const responseJSON = await response.json()
-        setTodos(responseJSON)
-     }
-
-     useEffect(() =>{
-         fetchApi()
-     }, [])
-
-     if(!todos) {
-         return<>'Carrregando....'</>
-        } else {
-         let listaContact = []
-         return(
-          listaContact = todos.map( (todo) => {
-              if(!todo){
-                  return null
-              }
-              return(
-                  <div>
-                      <Contact 
-                        key = {todo.id} 
-                        name = {todo.nome}
-                        phone = {todo.telefone}
-                        email = {todo.email}
-                      />
-                  </div>     
-                )
-          })
-         )
-     }
 } 
-
