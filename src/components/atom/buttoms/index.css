@@ -46,6 +46,7 @@ form {
     align-items: center;
     flex-direction: column;
     width: 65%;
+    height: 70vh;
     border: 1px solid;
     border-radius: 25px;
     margin: 0 auto;
@@ -94,7 +95,7 @@ label {
 .card-list {
     background-color: #fff;
     width: 90%;
-    height: 7, 5vh;
+    height: 7.5vh;
     border: 1px solid black;
     display: flex;
     color: #155;
@@ -110,7 +111,7 @@ label {
 .card-list-busca {
     background-color: #fff;
     width: 60%;
-    height: 7, 5vh;
+    height: 7.5vh;
     border: 1px solid black;
     display: flex;
     color: #155;
@@ -159,13 +160,13 @@ label {
 }
 
 input {
-    width: 60%;
+    width: 75%;
     height: 45px;
     border-radius: 75px;
     align-items: center;
     text-align: center;
     font-size: 25px;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 input:active {
@@ -212,8 +213,8 @@ input:active {
 }
 
 .formulario {
-    width: 80%;
-    min-height: 50vh;
+    width: 70%;
+    min-height: 40vh;
 }
 
 .formulario-add-edit {
