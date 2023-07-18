@@ -2,7 +2,7 @@
   "name": "react-projetototi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tu-usuario-de-github.github.io/nombre-del-repositorio",
+  "homepage": "https://tu-usuario-de-github.github.io/Projeto_React",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -50,7 +50,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
+    "gh-pages": "^5.0.0"
   }
   
 }
