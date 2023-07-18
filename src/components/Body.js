@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import { NomeContato } from "./atom/buttoms/datos,js";
+import { NomeContato } from "./atom/buttoms/datos";
 
 export default function Body() {
   const [todos, setTodos] = useState([])

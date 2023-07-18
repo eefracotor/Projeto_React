@@ -2,6 +2,7 @@
   "name": "react-projetototi",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tu-usuario-de-github.github.io/nombre-del-repositorio",
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -14,6 +15,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.27.2",
+    "json-server": "^0.17.3",
     "react": "^18.1.0",
     "react-axios": "^2.0.6",
     "react-dom": "^18.1.0",
@@ -25,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
   }
+  
 }

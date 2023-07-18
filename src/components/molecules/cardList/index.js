@@ -1,5 +1,5 @@
 import React from "react";
-import { EmailContato, NomeContato, TelefoneContato } from "../../atom/buttoms/datos,js";
+import { EmailContato, NomeContato, TelefoneContato } from "../../atom/buttoms/datos";
 
 export default function CardList (props){
     return(

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../../atom/buttoms";
 import { useNavigate } from "react-router-dom"
 import { helpHttp } from "../../../helpers/helpersHTTP";
-import { NomeContato } from "../../atom/buttoms/datos,js";
+import { NomeContato } from "../../atom/buttoms/datos";
 
 
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Button from "../../atom/buttoms";
 import { helpHttp } from "../../../helpers/helpersHTTP";
 import {useParams, useNavigate} from "react-router-dom"
-import { EmailContato, NomeContato, TelefoneContato } from "../../atom/buttoms/datos,js";
+import { EmailContato, NomeContato, TelefoneContato } from "../../atom/buttoms/datos";
 
 
 
