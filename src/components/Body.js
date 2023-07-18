@@ -5,7 +5,7 @@ import { NomeContato } from "./atom/buttoms/datos";
 
 export default function Body() {
   const [todos, setTodos] = useState([])
-  const URL = 'http://localhost:3000/contatos/'
+  const URL = 'https://react-projetototi.herokuapp.com/'
 
   useEffect(() => {
     const getData = async () => {
