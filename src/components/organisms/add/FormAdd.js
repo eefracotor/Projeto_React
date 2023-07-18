@@ -17,7 +17,7 @@ export default function FormAdd () {
     const { id } = useParams()
     const [db, setDb] = useState(null)
     let api = helpHttp()
-    let url = "http://localhost:3000/contatos/" 
+    let url = "https://react-projetototi.herokuapp.com/" 
     
     useEffect(() => {
         api.get(url).then((res) => {
@@ -27,7 +27,7 @@ export default function FormAdd () {
         })
     }, [url])
 
-    id ? URL = `http://localhost:3000/contatos/${id}` : URL = "http://localhost:3000/contatos/"
+    id ? URL = `https://react-projetototi.herokuapp.com/${id}` : URL = "https://react-projetototi.herokuapp.com/"
     const [contact, setContac] = useState([]);
     useEffect(() => {
         const getData = async () => {

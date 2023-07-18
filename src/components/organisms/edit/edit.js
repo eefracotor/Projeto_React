@@ -13,7 +13,7 @@ let initialForm = {
 
 export default function EditContact() {
    const {id} = useParams()
-   const URL = `http://localhost:3000/contatos/${id}`
+   const URL = `https://react-projetototi.herokuapp.com/${id}`
 
    
    const [contact, setContac] = useState([]);

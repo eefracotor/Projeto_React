@@ -12,7 +12,7 @@ export default function SearchContact() {
     const [busqueda, setBusqueda] = useState("") // busqueda
     let navigate = useNavigate()
     let api = helpHttp()
-    let url = "http://localhost:3000/contatos/"
+    let url = "https://react-projetototi.herokuapp.com/"
     useEffect(() => {
         api.get(url).then((res) => {
             if (!res.err) {

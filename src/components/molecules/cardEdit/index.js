@@ -11,7 +11,7 @@ const {id} = useParams()
 const [contacto, setContacto] = useState([])
 const [db, setDb] = useState([])
 let api = helpHttp()
-let url = `http://localhost:3000/contatos/${id}`
+let url = `https://react-projetototi.herokuapp.com/${id}`
 let navigate = useNavigate()
 
 useEffect(() =>{
